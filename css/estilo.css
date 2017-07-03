@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.over {
+  overflow: auto;
+  height: 100%;
+	position: relative;
+}
+.removeEspacamentos {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.espacoSuperior {
+  padding-top: 2em;
+}
+
+.noventaPerc {
+  padding: 0 5em;
+}
+
+.graph {
+       float: left;
+    width:27%;
+    margin-right: 1%;
+    background-color: #fff;
+    padding: 2em;
+	  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+
+.clearLeft {
+  width: 100%;
+  clear: left;
+}
+
+.btn:hover {
+  background-color: #ffb74d;
+}
+
+.fundoSecao1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-image: url('../img/bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.herdaAltura {
+  min-height: inherit;
+}
+
+.tipoWeight, .uppercase {
+  font-weight: 500;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.separador {
+  margin: 5em 0;
+}
+
+.separadorTexto {
+  margin: 2em 0 1em;
+}
+
+.separadorTitulo {
+  margin: 2em 0 2em 0;
+}
+
+.separadorLogin {
+  margin: 50px 0 0 0;
+}
+
+.reduzFoto {
+  padding: 1em;
+}
+
+.buttonPadRight {
+  padding-right: 10px;
+}
+
+.navbar-fixed-width {
+  width: 100%;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #1e88e5 !important;
+  transition: background-color 200ms linear;
+}
+
+/* Relacionado a página de login*/
+.bglogin {
+	height: 100%;
+	position: absolute;
+	overflow: auto;
+	top: 0;
+}
+
+.bgNovaConta {
+  height: 100%;
+	position: relative;
+	overflow: auto;
+	top: 5%;
+  -webkit-transform: translateY(5%);
+  -ms-transform: translateY(5%);
+  transform: translateY(5%);
+}
+
+.bgloginRight {
+  position: relative;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+}
+
+.bgInterface {
+  height: 100%;
+	position: absolute;
+	overflow: auto;
+}
+
+.bgFundoDinamico {
+	background-color: #2979ff;
+}
+
+.teste {
+  height: 300px;
+  width: 300px;
+  background-color: red;
+}
+
+.centered {
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   top: 30vh;
+}
+
+/* Fonte Icons */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-42 { font-size: 42px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-60 { font-size: 60px; }
+.material-icons.md-90 { font-size: 90px; }
+
+input[type="search"] {
+  min-height: 64px !important; /* or height of nav */
+}
+
+/* Altera esquema de cores das tabs */
+.tabs .tab a{
+    color:#ff9800;
+}
+.tabs .tab a:hover,.tabs .tab a.active {
+	background-color:transparent;
+	color:#f57c00;
+}
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+	color:rgba(102,147,153,0.7);
+}
+.tabs .indicator {
+	background-color:#f57c00;
+}
+
+/* Altera cor dos Forms */
+#textarea1:focus, #nome_instituicao:focus, #nome_usuario:focus, #email:focus, #password:focus, #nome_cadastro:focus, #sobrenome_cadastro:focus, .corLaranja {
+  border-bottom: 1px solid #f57c00;
+  box-shadow: 0 1px 0 0 #f57c00;
+}
+
+#textarea1:focus + label, #nome_instituicao:focus + label, #nome_usuario:focus + label, #email:focus + label, #password:focus + label, #nome_cadastro:focus + label, #sobrenome_cadastro:focus + label, #pessoaJudirica:focus + label, #pessoaFisica:focus + label {
+  color: #f57c00;
+}
+
+/* Corrige bug na altura do carrousel */
+.carousel-slider {
+    height: 400px !important;
+}
+
+/* Define tamanho do carrousel */
+.tamanhoCarrousel {
+  max-width: 50em;
+}

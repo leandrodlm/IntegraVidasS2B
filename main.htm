@@ -1,0 +1,25 @@
+<div class="graph">
+  <canvas id="canvas" height="350" width="600" style="width: 600px; height: 350px;"></canvas>
+     <script>
+
+  		 var barChartData = {
+  			labels : ["Creche","Hospital","Asilo","Orfanato"],
+  			datasets : [
+  				{
+  					fillColor : "rgba(9, 35, 78, 0.91)",
+  					strokeColor : "rgba(9, 35, 78, 0.91)",
+  					data : [65,59,90,81]
+  				},
+  				{
+  					fillColor : "rgba(255, 137, 167, 0.78)",
+  					strokeColor : "rgba(255, 163, 186, 0.93)",
+  					data : [28,48,40,19]
+  				}
+  			]
+
+  		}
+
+  	var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Bar(barChartData);
+
+  	</script>
+</div>

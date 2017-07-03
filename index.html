@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Projeto Integra Vidas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <!--Informa o navegador que o site é otimizado para Mobile(Tamanho do dispositivo e escala)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metas informativas e destinadas a SEO -->
+    <!-- Meta Autor do website -->
+    <meta name="author" content="Leandro Murta e Diogo Alves" />
+    <!-- Meta Descrição do conteúdo -->
+    <meta name="description" content="Projeto Integra Vidas ">
+
+    <!-- Trecho de importação de estilos CSS e do AngularJs -->
+    <!--Importa Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!--Importa estilo do materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <!--Importa folha de estilo-->
+    <link type="text/css" rel="stylesheet" href="css/estilo.css">
+
+    <!--Importa AngularJS-->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+	  <script type="text/javascript" src="js/angular-route.min.js"></script>
+  </head>
+
+  <!-- Conteúdo do site -->
+  <body>
+    <!-- Menu -->
+    <header id="secao1" class="fundoSecao1">
+      <div class="navbar-fixed">
+        <nav class="transparent navbar-fixed-top">
+          <div class="nav-wrapper container tipoWeight">
+            <a href="/" class="brand-logo"><i class="material-icons md-42">extension</i><span class="hide-on-med-and-down">Integra Vidas</span></a>
+            <a href="#" data-activates="menu-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#secao1" class="white-text">Início</a></li>
+              <li><a href="#secao2" class="white-text">Quem somos</a></li>
+              <li><a href="#secao3" class="white-text">Instituições</a></li>
+              <li><a href="#secao4" class="white-text">Notícias</a></li>
+              <li><a href="#secao5" class="white-text">Apoiadores</a></li>
+              <li><a href="login.html" class="waves-effect waves-light btn orange darken-2">Login</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="side-nav" id="menu-mobile">
+        <li><a href="#secao1">Início</a></li>
+        <li><a href="#secao2">Quem somos</a></li>
+        <li><a href="#secao3">Instituições</a></li>
+        <li><a href="#secao4">Notícias</a></li>
+        <li><a href="#secao5">Apoiadores</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+
+      <!-- Header -->
+      <div class="section no-pad-bot herdaAltura valign-wrapper">
+        <div class="container">
+          <section class="scrollspy">
+              <h1 class="center white-text">Integra Vidas</h1>
+              <h5 class="center white-text">Contribua com uma instituição e transforme a vida de quem necessita!</h5>
+          </section>
+        </div>
+      </div>
+    </header>
+    <!-- Fim Menu -->
+
+    <!-- Quem somos -->
+    <div class="container">
+      <section class="scrollspy separador" id="secao2">
+        <article>
+          <h4 class="center tipoWeight">O Integra Vidas é um <span class="orange-text">projeto inovador</span> que visa facilitar o acesso de <span class="orange-text">potenciais doadores</span> para instituições que <span class="orange-text">necessitam de sua ajuda.</span></h4>
+          <h5 class="center grey-text separadorTexto">Queremos fazer com que empresas ou pessoas físicas possam conhecer melhor o trabalho das instituições, dentre elas creches, orfanatos, hospitais infantis e asilos. Através deste conhecimento e quais são suas demandas, o destino destes recursos será transparente e você terá a certeza de que sua contribuição mudará vidas.</h5>
+          <div class="center-align">
+          <!-- Modal Trigger -->
+            <a class="btn-large waves-effect waves-light orange darken-2" href="#modalSobre">Sobre o projeto</a>
+          </div>
+
+            <!-- Modal Structure -->
+            <div id="modalSobre" class="modal grey lighten-3">
+              <div class="modal-content">
+                <h4 class="flow-text center-align">Sobre o Projeto</h4>
+                <p class="flow-text">O Integra Vidas nasceu como parte de um processo seletivo do programa Students 2 Business orquestrado pelo Centro de Inovação da Microsoft em Minas Gerais e a PUC Minas em 2017, em parceria com a Totvs, consistindo na elaboração de um Portal, desenvolvido com linguagens Web (HTML5, CSS3, JavaScript e AngularJS).</p>
+                <p class="flow-text">Construímos o Integra Vidas com tecnologias Web modernas, utilizando-se do Framework Materialize e conceitos do Material Design. No sistema, utilizamos o AngularJS que se trata de um Framework JavaScript que visa estender as funcionalidades do desenvolvimento Web.</p>
+              </div>
+
+              <div class="container">
+
+
+              <div class="row">
+                <div class="col s12 m6">
+                  <div class="card-panel grey lighten-5">
+                    <div class="row">
+                      <div class="col s12">
+                        <img src="img/leandro.png" alt="Foto de Leandro" class="circle responsive-img hoverable">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12 center-align">
+                        <h5>Leandro Murta</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12 center-align">
+                        <span>
+                          Estudante em Desenvolvimento Mobile
+                        </span>
+                      </div>
+                    </div>
+                      <div class="row">
+                        <div class="col s12 center-align">
+                          <a href="https://www.linkedin.com/in/leandlm/" target="_blank"><img src="img/in.svg" alt="Link do Linkedin" class="hoverable"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="card-panel grey lighten-5">
+                      <div class="row">
+                        <div class="col s12">
+                          <img src="img/diogo.png" alt="Foto de Diogo" class="circle responsive-img hoverable">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12 center-align">
+                          <h5>Diogo Alves</h5>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12 center-align">
+                          <span>
+                            Professor de Tecnologia da Informação
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12 center-align">
+                          <a href="https://www.linkedin.com/in/profdiogoalves/"><img src="img/in.svg" alt="Link do Linkedin" class="hoverable"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Retornar</a>
+              </div>
+            </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- Fim Quem somos -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/crechecriancas.jpg" alt="Crianças no horário de lanche em uma creche"></div>
+    </div>
+
+    <!-- Instituições parceiras -->
+    <div class="container">
+      <section class="scrollspy separador" id="secao3">
+        <article>
+          <h3 class="center uppercase grey-text text-darken-4 separadorTexto">Instituições Parceiras</h3>
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a class="active" href="#opcao1">Cantinho Feliz</a></li>
+                <li class="tab col s3"><a class="" href="#opcao2">Lar dos Idosos</a></li>
+                <li class="tab col s3"><a class="" href="#opcao3">Hospital da Criança</a></li>
+                <li class="tab col s3"><a class="" href="#opcao4">Orfanato Jeito de Ser</a></li>
+              </ul>
+            </div>
+
+            <!-- Creche Cantinho Feliz -->
+            <div id="opcao1" class="col s12">
+              <div class="row">
+                <div class="col s12 m6">
+                  <img src="img/creche.jpg" class="responsive-img" alt="Ambiente da Creche Lar do Bem">
+                </div>
+                <div class="s12 m6">
+                    <h4 class="center-align">Creche Cantinho Feliz</h4>
+
+                  <p class="flow-text">&emsp;Nossas instalações são totalmente adaptadas para atender a necessidade de cada faixa etária.</p>
+                  <p class="flow-text truncate">&emsp;Nós queremos que nossas crianças sejam alegres e felizes no tempo que permanecerem conosco e ao saírem do Lar do Bem, tenham aprendido que a escola é um bom lugar para se viver.</p>
+
+                  <!-- Modal Trigger -->
+                  <a class="waves-effect waves-light btn orange darken-2" href="#modalCreche">Ler mais a Respeito</a>
+
+                  <!-- Modal Structure -->
+                  <div id="modalCreche" class="modal">
+                    <div class="modal-content">
+                        <h4 class="center-align">Creche Cantinho Feliz</h4>
+
+                      <p class="flow-text">&emsp;Nossas instalações são totalmente adaptadas para atender a necessidade de cada faixa etária.</p>
+                      <p class="flow-text">&emsp;Nós queremos que nossas crianças sejam alegres e felizes no tempo que permanecerem conosco e ao saírem do Lar do Bem, tenham aprendido que a escola é um bom lugar para se viver.</p>
+                      <p class="flow-text">&emsp;A Creche-Lar do Bem foi fundada em julho de 1991 e desde então sempre trabalhou com crianças entre 4 meses e 6 anos de idade acumulando larga experiência e especialização no atendimento das necessidades do segmento Educação Infantil.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Retornar</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Asilo Lar dos Idosos -->
+            <div id="opcao2" class="col s12">
+              <div class="row">
+                <div class="col s12 m6">
+                  <img src="img/asilo.jpg" class="responsive-img" alt="Enfermeira e uma senhora no lar dos idosos ao ar livre">
+                </div>
+                <div class="s12 m6">
+
+                    <h4 class="center-align">Lar do Idoso</h4>
+
+                  <p class="flow-text">&emsp;Chegar à terceira idade é uma grande conquista.</p>
+                  <p class="flow-text truncate">&emsp;A melhor casa de repouso de Belo Horizonte abriu as portas em 2014, para hospedagem de curta, média e longa permanência, de idosas e idosos.</p>
+
+                  <!-- Modal Trigger -->
+                  <a class="waves-effect waves-light btn orange darken-2" href="#modalAsilo">Ler mais a Respeito</a>
+
+                  <!-- Modal Structure -->
+                  <div id="modalAsilo" class="modal">
+                    <div class="modal-content">
+                      <h4 class="center-align">Lar do Idoso</h4>
+                      <p class="flow-text">&emsp;Chegar à terceira idade é uma grande conquista.</p>
+                      <p class="flow-text">&emsp;A melhor casa de repouso de Belo Horizonte abriu as portas em 2014, para hospedagem de curta, média e longa permanência, de idosas e idosos.</p>
+                      <p class="flow-text">&emsp;Somos uma casa de convivência diferenciada, onde o conforto e o espaço nos quartos e em todas as demais dependências são nossa maior preocupação e nossa principal marca.</p>
+                      <p class="flow-text">&emsp;A casa foi construída especialmente para proporcionar liberdade, aconchego e qualidade de vida aos idosos hospedados.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Retornar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hospital da Criança Mercure -->
+            <div id="opcao3" class="col s12">
+              <div class="row">
+                <div class="col s12 m6">
+                  <img src="img/crianca-hospital.jpg" class="responsive-img" alt="Ambiente da Creche Lar do Bem">
+                </div>
+                <div class="s12 m6">
+                    <h4 class="center-align">Hospital da Criança Mercure</h4>
+
+                  <p class="flow-text">&emsp;O Pro Criança Cardíaca tem como objetivo oferecer o melhor da medicina para a criança cardíaca carente. Prezando por um processo igualitário de atendimento, todos os procedimentos invasivos das crianças do Projeto são realizados no Hospital da Crianca Mercure.</p>
+
+                  <!-- Modal Trigger -->
+                  <a class="waves-effect waves-light btn orange darken-2" href="#modalHospital">Ler mais a Respeito</a>
+
+                  <!-- Modal Structure -->
+                  <div id="modalHospital" class="modal">
+                    <div class="modal-content">
+                      <h4 class="center-align">Hospital da Criança Mercure</h4>
+                      <p class="flow-text">&emsp;O Pro Criança Cardíaca tem como objetivo oferecer o melhor da medicina para a criança cardíaca carente. Prezando por um processo igualitário de atendimento, todos os procedimentos invasivos das crianças do Projeto são realizados no Hospital da Crianca Mercure.</p>
+                      <p class="flow-text">&emsp;Oferecemos vagas em quase todas as especialidades pediátricas para consultas, como: alergia, anestesiologia, cardiologia, cirurgia pediátrica, dermatologia, endocrinologia, gastroenterologia, genética clínica, ginecologia infanto-puberal, homeopatia, imunologia, infectologia, nefrologia, neurocirurgia, neurologia, oncohematologia, ortopedia, pneumologia, psiquiatria e reumatologia.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Retornar</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Orfanato Jeito de Ser -->
+            <div id="opcao4" class="col s12">
+              <div class="row">
+                <div class="col s12 m6">
+                  <img src="img/orfanato.jpg" class="responsive-img" alt="Fachada de entrada do orfanato Jeito de Ser">
+                </div>
+                <div class="s12 m6">
+                    <h4 class="center-align">Orfanato Jeito de Ser</h4>
+
+                  <p class="flow-text">&emsp;O Orfanato Jeito de Ser é um lugar que vive de carinho e amor doado pelas Irmãs Franciscanas, por voluntários, por doadores, por amigos...</p>
+
+                  <!-- Modal Trigger -->
+                  <a class="waves-effect waves-light btn orange darken-2" href="#modalOrfanato">Ler mais a Respeito</a>
+
+                  <!-- Modal Structure -->
+                  <div id="modalOrfanato" class="modal">
+                    <div class="modal-content">
+                      <h4 class="center-align">Orfanato Jeito de Ser</h4>
+                      <p class="flow-text">&emsp;O Orfanato Jeito de Ser é um lugar que vive de carinho e amor doado pelas Irmãs Franciscanas, por voluntários, por doadores, por amigos e amigas e pela comunidade, para as meninas e adolescentes em situação de vulnerabilidade social em dois programas: Acolhimento institucional na faixa etária de 04 a 10 anos (abrigo) e Casa Dia faixa etária de 04 a 12 anos (externato).</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Retornar</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <!-- Fim Instituições parceiras -->
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/casadoidoso.jpg" alt="Horário de recreação na Casa do Idoso com dança"></div>
+    </div>
+
+    <!-- Notícias -->
+    <div class="container">
+      <section class="scrollspy separador" id="secao4">
+        <h3 class="center uppercase grey-text text-darken-4 separadorTexto">Notícias</h3>
+        <div class="row">
+          <article class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/news1.jpg" alt="Imagem de duas mãos de pessoas idade">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Lar do Idoso<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Lar do Idoso<i class="material-icons right">close</i></span>
+                <p>A melhor casa de repouso de Belo Horizonte abriu as portas em 2014, para hospedagem de curta, média e longa permanência, de idosas e idosos.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/news2.jpg" alt="Menino lendo na biblioteca acompanhado da professora.">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Orfanato<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Orfanato<i class="material-icons right">close</i></span>
+                <p>O Orfanato Jeito de Ser é um lugar que vive de carinho e amor doado pelas Irmãs Franciscanas, por voluntários, por doadores, por amigos e amigas e pela comunidade.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/news3.jpg" alt="Menina regando flores no jardim">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Creche Cantinho<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Creche Cantinho Feliz<i class="material-icons right">close</i></span>
+                <p>A Creche-Lar do Bem foi fundada em julho de 1991 e desde então sempre trabalhou com crianças entre 4 meses e 6 anos de idade acumulando larga experiência e especialização no atendimento das necessidades do segmento Educação Infantil.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </section>
+    </div>
+    <!-- Fim Notícias -->
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/hospitaldacrianca.jpg" alt="Corredor do hospital da criança, uma enfermeira abraça uma criança paciente"></div>
+    </div>
+
+    <!-- Parceiros -->
+    <div class="container">
+      <section class="scrollspy separador" id="secao5">
+        <h3 class="center uppercase grey-text text-darken-4 separadorTexto">Nossos parceiros</h3>
+        <section class="row">
+          <figure>
+            <img src="img/Apoiadores/MS-Logo.png" class="col s12 m2" alt="">
+            <span class="col m1 hide-on-small-only"></span>
+            <img src="img/Apoiadores/Totvs.png" class="col s12 m2" alt="">
+            <span class="col m1 hide-on-small-only"></span>
+            <img src="img/Apoiadores/PUCMinas.jpg" class="col s12 m2" alt="">
+            <span class="col m1 hide-on-small-only"></span>
+            <img src="img/Apoiadores/HTML5.png" class="col s12 m2" alt="">
+            <span class="col m1 hide-on-small-only"></span>
+          </figure>
+        </section>
+      </section>
+    </div>
+    <!-- Fim Parceiros -->
+
+
+    <div class="container">
+      <h3 class="center uppercase grey-text text-darken-4 separadorTexto">Cadastre sua instituição</h3>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="nome_instituicao" type="text" class="validate">
+              <label for="nome_instituicao">Nome da Instituição</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="nome_usuario" type="text" class="validate">
+              <label for="nome_usuario">Nome completo</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email para contato</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Conte mais sobre a instituição</label>
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn waves-effect waves-light orange darken-2" type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="page-footer blue darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align">
+            <a class="waves-effect waves-light btn-large orange darken-2 separadorTexto" href="login.html">Deseja contribuir? Clique aqui!</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright blue darken-4">
+        <div class="container center">
+        © 2017 Integra Vidas. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!--Importa jQuery antes de materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Importa JS do Materialize -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Importa Javascript-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Start of Async Drift Code -->
+    <script type="text/javascript" src="js/drift.js"></script>
+  </body>
+</html>

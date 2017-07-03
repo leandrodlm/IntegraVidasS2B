@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Integra Vidas - Interface</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <!--Informa o navegador que o site é otimizado para Mobile(Tamanho do dispositivo e escala)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metas informativas e destinadas a SEO -->
+    <!-- Meta Autor do website -->
+    <meta name="author" content="Leandro Murta e Diogo Alves" />
+    <!-- Meta Descrição do conteúdo -->
+    <meta name="description" content="Projeto Integra Vidas ">
+
+    <!-- Trecho de importação de estilos CSS e do AngularJs -->
+    <!--Importa Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!--Importa estilo do materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <!--Importa folha de estilo-->
+    <link type="text/css" rel="stylesheet" href="css/estilo.css">
+
+    <!--Importa AngularJS-->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+	  <script type="text/javascript" src="js/angular-route.min.js"></script>
+  </head>
+  <body data-ng-app="myApp">
+    <!-- Menu -->
+    <header>
+      <div class="navbar-fixed">
+        <nav class="blue navbar-fixed-top">
+          <div class="nav-wrapper container tipoWeight navbar-fixed-width">
+            <div class="row">
+              <div class="col s3">
+                <a href="index.html" class="brand-logo"><i class="material-icons md-42">extension</i><span class="hide-on-med-and-down">Integra Vidas</span></a>
+                <a href="#" data-activates="menu-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+              </div>
+              <div class="nav-wrapper col s6 hide-on-med-and-down">
+                <form>
+                  <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+              </div>
+              <div class="col s3">
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><i class="material-icons">language</i></i></a></li>
+                  <li><a href="" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><i class="material-icons">format_list_bulleted</i></i></a></li>
+                  <li><a href="" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><i class="material-icons">chat</i></i></a></li>
+                  <li><a href="" class="waves-effect waves-block waves-light dropdown-button" data-activates="dropdown1"><i class="mdi-social-notifications"><i class="material-icons">notifications</i></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <ul id="menu-mobile" class="side-nav">
+        <li><a href="#/">Painel</a></li>
+        <li><a href="#!mensageiro">Mensagens</a></li>
+        <li><a href="#!doar">Nova Doação</a></li>
+        <li><a href="#!historico">Historico</a></li>
+        <li><a href="#!historico">Voluntariado</a></li>
+        <li><a href="#!mapaInstituicoes">Mapa das instituições</a></li>
+      </ul>
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+
+    </header>
+    <!-- Fim Menu -->
+
+    <!-- Conteudo -->
+    <div class="row">
+      <!-- Painel lateral -->
+      <section class="col S12 m2 l2 xl2 card lighten-3 bgInterface hide-on-med-and-down removeEspacamentos">
+        <!-- Dados do usuario -->
+        <div class="row">
+           <ul class="">
+            <li>
+              <a href="#!user"><img class="circle hoverable" src="https://randomuser.me/api/portraits/men/15.jpg"></a>
+            </li>
+            <li>
+              <a href="#!name" class="col s12">John Doe</a>
+            </li>
+            <li>
+              <a href="#!email" class="col s12">jdandturk@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Fim Dados do usuario -->
+
+        <!-- Opções do painel -->
+        <div class="row">
+          <ul>
+            <li class="bold active">
+              <a href="#/" class="waves-effect col s12"><i class="material-icons buttonPadRight">dashboard</i>Painel</a>
+            </li>
+            <li class="bold">
+              <a href="#!mensageiro" class="waves-effect col s12"><i class="material-icons buttonPadRight">email</i>Mensagens</a>
+            </li>
+            <li class="bold">
+              <a href="#!doar" class="waves-effect col s12"><i class="material-icons buttonPadRight">redeem</i>Nova doação</a>
+            </li>
+            <li class="bold">
+              <a href="#!historico" class="waves-effect col s12"><i class="material-icons buttonPadRight">assignment</i>Histórico</a>
+            </li>
+            <li class="bold active">
+              <a href="#/" class="waves-effect col s12"><i class="material-icons buttonPadRight">local_florist</i>Voluntáriado</a>
+            </li>
+            <li class="bold active">
+              <a href="#!mapaInstituicoes" class="waves-effect col s12"><i class="material-icons buttonPadRight">place</i>Mapa das instituições</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Fim Opções do painel -->
+      </section>
+      <!-- Fim Painel lateral -->
+
+      <!-- Conteudo principal -->
+      <section class="col s12 m10 l10 xl10 right">
+        <div class="row">
+          <div data-ng-view></div>
+        </div>
+      </section>
+      <!-- Fim Conteudo principal -->
+    </div>
+
+    <!-- Controller do AngularJS -->
+    <script>
+    var app = angular.module("myApp", ["ngRoute"]);
+    app.config(function($routeProvider) {
+      $routeProvider
+      .when("/", {
+          templateUrl : "panel.htm"
+      })
+      .when("/doar", {
+          templateUrl : "doar.htm"
+      })
+      .when("/mensageiro", {
+          templateUrl : "mensagens.htm"
+      })
+      .when("/historico", {
+          templateUrl : "historico.htm",
+          controller : "MainController"
+      })
+      .when("/mapaInstituicoes", {
+          templateUrl : "mapa.htm"
+      });
+    });
+    app.controller('MainController', ['$scope', function($scope) {
+      $scope.doacao = [{
+        nomeInstituicao: 'Creche Cantinho Feliz',
+        valorDoado: 50,
+        publicacao: new Date('2017','04','08'),
+        likes: 5
+      },
+      {
+        nomeInstituicao: 'Orfanato Jeito de Ser',
+        valorDoado: 120,
+        publicacao: new Date('2017','04','01'),
+        likes: 5
+      },
+      {
+        nomeInstituicao: 'Lar dos Idosos',
+        valorDoado: 100,
+        publicacao: new Date('2014','04','02'),
+        likes: 3
+      }];
+      $scope.plusOne = function(historico) {
+      $scope.doacao[historico].likes += 1;
+      };
+    }]);
+
+    </script>
+    <!-- Fim Controller do AngularJS -->
+
+
+    <!--Importa jQuery antes de materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Importa Javascript-->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

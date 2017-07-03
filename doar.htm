@@ -1,0 +1,46 @@
+<h3 class="center-align">Nova doação</h3>
+<form data-ng-submit="recebeDoacao()">
+  <div class="container">
+    <div class="row">
+      <h5>Escolha o destino</h5>
+        <p>
+          <input name="Doacao" type="radio" id="doar1" data-ng-model="instSelecionada" value="Creche" class="actived" />
+          <label for="doar1">Creche Cantinho Feliz</label>
+        </p>
+        <p>
+          <input name="Doacao" type="radio" id="doar2" data-ng-model="instSelecionada" value="Asilo" />
+          <label for="doar2">Lar dos Idosos</label>
+        </p>
+        <p>
+          <input name="Doacao" type="radio" id="doar3" data-ng-model="instSelecionada" value="Hospital" />
+          <label for="doar3">Hospital da Criança</label>
+        </p>
+        <p>
+          <input name="Doacao" type="radio" id="doar4" data-ng-model="instSelecionada" value="Orfanato" />
+          <label for="doar4">Orfanato Jeito de Ser</label>
+        </p>
+    </div>
+    <div class="row">
+      <h5>Informe a quantidade que deseja doar</h5>
+      <p class="range-field">
+          <input type="range" id="test5" min="20" max="1000" data-ng-model="valorDoado" />
+      </p>
+    </div>
+    <div class="row">
+      <h5>Método de Pagamento</h5>
+      <div class="input-field">
+        <select>
+          <option value="">Escolha uma forma de pagamento</option>
+          <option value="1">Debito</option>
+          <option value="2">Crédito</option>
+          <option value="3">Boleto</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn waves-effect waves-light orange darken-2" onclick=callToast() name="efetuado">Efetuar doação
+          <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,34 @@
+<link type="text/css" rel="stylesheet" href="css/historico.css">
+
+<div class="main" data-ng-controller="MainController">
+  <h3 class="center-align">Histórico de doações</h3>
+    <div data-ng-repeat="doacoes in doacao" class="row">
+      <table class="rwd-table highlight">
+        <tr>
+          <th>Nome Instituição</th>
+          <th>Valor Doado</th>
+          <th>Data</th>
+        </tr>
+        <tr>
+          <td data-th="Nome">{{doacoes.nomeInstituicao}}</td>
+          <td data-th="Email">{{doacoes.valorDoado | currency: "R$"}}</td>
+          <td data-th="Cargo">{{doacoes.publicacao | date:"dd-MM-yyyy"}}</td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+
+<!-- <link type="text/css" rel="stylesheet" href="css/historico.css"> -->
+
+<!-- <div class="main" data-ng-controller="MainController">
+  <div ng-repeat="doacoes in doacao" class="">
+
+      <p class="">{{doacoes.nomeInstituicao}}</p>
+      <p class="">{{doacoes.valorDoado | currency: "R$"}}</p>
+      <p class="">{{doacoes.publicacao | date:"dd-MM-yyyy"}}</p>
+      <button ng-click="plusOne($index)"></button>
+      <p class="likes">+ {{doacoes.likes}}</p>
+
+  </div>
+</div> -->

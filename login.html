@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Projeto Integra Vidas - Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <!--Informa o navegador que o site é otimizado para Mobile(Tamanho do dispositivo e escala)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metas informativas e destinadas a SEO -->
+    <!-- Meta Autor do website -->
+    <meta name="author" content="Leandro Murta e Diogo Alves" />
+    <!-- Meta Descrição do conteúdo -->
+    <meta name="description" content="Projeto Integra Vidas ">
+
+    <!-- Trecho de importação de estilos CSS e do AngularJs -->
+    <!--Importa Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Importa estilo do materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Importa folha de estilo-->
+    <link type="text/css" rel="stylesheet" href="css/estilo.css">
+
+    <!--Importa AngularJS-->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+	  <script type="text/javascript" src="js/angular-route.min.js"></script>
+  </head>
+
+  <!-- @@@ Conteúdo do site @@@ -->
+  <body class="bgFundoDinamico">
+    <div class="row">
+      <section class="col S12 m5 l4 xl4 white bglogin">
+        <div class="center-align">
+          <a href="index.html" class="tipoWeight"><i class="material-icons md-90 separadorLogin">extension</i><h2>Integra Vidas</h2></a>
+        </div>
+        <h4 class="center">Faça seu Login</h4>
+        <p class="center">Ainda não possui cadastro? <a href="criarconta.html">Crie uma nova conta.</a></p>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <a href="interface.html" class="waves-effect waves-light btn orange center col s12">Entrar</a>
+        </div>
+        <div class="row">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-orange btn btn-flat right" href="#modal1">Esqueceu sua senha?</a>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal col s12 m6 offset-m4 l4 offset-l4">
+            <div class="modal-content center-align">
+              <h4 class="">Esqueceu a senha?</h4>
+              <div class="row">
+                <form class="col s12">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="row">
+                    <button class="btn waves-effect waves-light orange darken-2" type="submit" name="recuperar">Recuperar
+                        <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Retornar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="col m7 l8 xl8 right hide-on-small-only">
+        <div class="carousel carousel-slider centered tamanhoCarrousel bgloginRight">
+          <a class="carousel-item" href="#one!"><img src="img/crechecriancas.jpg"></a>
+          <a class="carousel-item" href="#two!"><img src="img/casadoidoso.jpg"></a>
+          <a class="carousel-item" href="#three!"><img src="img/hospitaldacrianca.jpg"></a>
+        </div>
+      </section>
+    </div>
+
+
+
+
+    <!--Importa jQuery antes de materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Importa Javascript-->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
